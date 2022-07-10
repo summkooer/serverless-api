@@ -20,7 +20,7 @@ variable "app_name" {
 }
 
 variable "app_env" {
-  description = "Application environment tag"
+  description = "Application environment tag-test"
   default     = "dev"
 }
 
