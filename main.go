@@ -30,7 +30,7 @@ func Handler(request events.APIGatewayProxyRequest) (events.APIGatewayProxyRespo
 	}
 
 	return events.APIGatewayProxyResponse{
-		Body:       result,
+		Body:       fmt.Sprintf("Results: %v\n", result),
 		StatusCode: 200,
 		Headers: map[string]string{
 			"Content-Type":                 "application/json",
